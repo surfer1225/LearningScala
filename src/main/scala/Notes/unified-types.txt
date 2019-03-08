@@ -1,0 +1,16 @@
+Any:
+- AnyVal
+  - Double, Float, Long, Int, Short, Byte, Unit, Boolean, Char
+- AnyRef
+  - List, Option, YourClass
+    - Null (inherit the above 3)
+
+Nothing inherits Null and all classes under AnyVal
+
+Unit is a value type which carries no meaningful information.
+There is exactly one instance of Unit which can be declared literally like so: ().
+All functions must return something so sometimes Unit is a useful return type.
+
+casting is uni-directional:
+- Char to Int
+- Byte -> Short -> Int -> Long -> Float -> Double
